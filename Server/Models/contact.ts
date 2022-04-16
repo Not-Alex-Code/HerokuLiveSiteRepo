@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-const Schema = mongoose.Schema;
+const Schema = mongoose.Schema; // alias for mongoose.Schema
 
 const ContactSchema = new Schema
 ({
@@ -8,7 +8,7 @@ const ContactSchema = new Schema
     EmailAddress: String
 },
 {
-    collection: "contacts" 
+    collection: "contacts"
 });
 
 const Model = mongoose.model("Contact", ContactSchema);
